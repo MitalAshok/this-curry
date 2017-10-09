@@ -1,6 +1,6 @@
 {
   "name": "this-curry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A simple and flexible way to curry functions, preserving this.",
   "homepage": "https://github.com/MitalAshok/this-curry",
