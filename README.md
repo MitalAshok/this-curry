@@ -9,13 +9,13 @@ Download the package through [`npm`](https://www.npmjs.com/package/this-curry):
 $ npm install this-curry
 ```
 
-Or download it from source.
+Or download it from [the source](https://github.com/MitalAshok/this-curry).
 
 ## Usage
 
 ```javascript
 // In the browser
-<script src="/js/this-curry"></script>
+<script src="/js/this-curry.min.js"></script>
 // Use `window.curry`
 
 // In Node
@@ -111,7 +111,7 @@ function sum() {
 }
 
 var sum_5_or_more = curry(sum, { length: 5 });
-var sum_5 = curry(sum, { length: 5, validator: limit_args });
+var sum_5 = curry(sum, { length: 5, validator: curry.limit_args });
 
 sum_5_or_more(1)(2, 3, 4)(5, 6, 7);  // 28
 sum_5        (1)(2, 3, 4)(5, 6, 7);  // 15, as 6 and 7 are ignored.
